@@ -1,0 +1,15 @@
+triple_inequality: THEORY
+BEGIN
+
+  IMPORTING reals@sqrt
+
+  lhs(a, b, c: real): real =
+    a * b * (a^2 - b^2) + b * c * (b^2 - c^2) + c * a * (c^2 - a^2)
+
+  rhs(a, b, c: real): real =
+    (9 * sqrt(2) / 32) * (a^2 + b^2 + c^2)^2
+
+  inequality_lemma: LEMMA
+    FORALL (a, b, c: real): lhs(a, b, c) <= rhs(a, b, c)
+
+END triple_inequality
