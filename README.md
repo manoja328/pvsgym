@@ -1,5 +1,7 @@
 # PVSgym
 
+https://www.manojacharya.com/pvsgym/
+
 ## Build and Install PVS and check if it can run in raw mode:
 `./pvs -raw -port 8080`
 
@@ -42,5 +44,16 @@ Run time  = 0.56 secs.
 Real time = 1.404 secs.
 🛑 Killed process group for PID 92351
 ```
+
+## Cite our work: 
+```
+@inproceedings{acharya2025pvsgym,
+  title={PVSGym: A Proof Learning Environment},
+  author={Acharya, Manoj and Nukala, Karthik and Shankar, Natarajan},
+  booktitle={The 5th Workshop on Mathematical Reasoning and AI at NeurIPS 2025}
+}
+```
+
+
 
 
