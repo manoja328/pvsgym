@@ -1,6 +1,8 @@
 # PVSgym
 
-https://www.manojacharya.com/pvsgym/
+Install via pip: `pip install git+https://github.com/manoja328/pvsgym.git`
+
+Read our paper: https://www.manojacharya.com/pvsgym/
 
 ## Build and Install PVS and check if it can run in raw mode:
 `./pvs -raw -port 8080`
