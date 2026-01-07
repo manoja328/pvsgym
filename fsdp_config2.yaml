@@ -1,0 +1,15 @@
+compute_environment: LOCAL_MACHINE
+debug: false
+distributed_type: MULTI_GPU        # ✅ let Trainer control FSDP, not accelerate
+num_machines: 1
+num_processes: 4                   # 4 GPUs
+machine_rank: 0
+main_process_ip: "127.0.0.1"
+main_process_port: 8779
+same_network: true
+rdzv_backend: static
+mixed_precision: bf16              # ✅ good for RTX 6000
+enable_cpu_affinity: false
+# These FSDP keys are not needed when Trainer controls FSDP, can be dropped or ignored
+# fsdp_config: ...
+main_training_function: train

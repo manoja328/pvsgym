@@ -1,0 +1,8 @@
+compute_environment: LOCAL_MACHINE
+main_process_ip: "127.0.0.1"
+main_process_port: 8779
+debug: false
+distributed_type: MULTI_GPU
+num_processes: 4
+mixed_precision: bf16
+main_training_function: train
