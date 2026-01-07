@@ -55,6 +55,7 @@ def train(
     use_peft_lora=False,
     use_fsdp=False,
     use_deepspeed=False,
+    ds_config=None,
 ):
     config = load_config(config_path)
     setup_ddp()
@@ -145,7 +146,7 @@ def train(
             dtype=torch.bfloat16,  # or torch.float16 if you prefer
         )
 
-    deepspeed_config = "deepspeed_cf.json" if use_deepspeed else None
+    deepspeed_config = ds_config if use_deepspeed else None
 
     args = TrainingArguments(
         output_dir=SAVE_PATH,

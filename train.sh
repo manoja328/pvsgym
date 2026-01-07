@@ -54,15 +54,16 @@ CONFIG="pvs_v5fixed.yaml"
 #    --use_fsdp True
 
 ## this worked on newgpu with 48gb gpu
-# export CUDA_VISIBLE_DEVICES=0,1,2,3   # or 4,5,6,7 on your node
-# CONFIG="pvs_v6.yaml"
-# torchrun --nproc_per_node=4 sft_train.py \
-#   --config_path "$CONFIG" \
-#   --bs 8 \
-#   --use_peft_lora False \
-#   --testrun False \
-#   --use_fsdp False \
-#   --use_deepspeed True
+export CUDA_VISIBLE_DEVICES=0,1,2,3   # or 4,5,6,7 on your node
+CONFIG="pvs_v6.yaml"
+torchrun --nproc_per_node=4 sft_train.py \
+  --config_path "$CONFIG" \
+  --bs 8 \
+  --use_peft_lora False \
+  --testrun False \
+  --use_fsdp False \
+  --use_deepspeed True \
+  --ds_config "deepspeed_cf.json"
 
 
 # accelerate launch \
@@ -78,7 +79,7 @@ CONFIG="pvs_v5fixed.yaml"
 
 
 ## eval
-CUDA_VISIBLE_DEVICES=0 python sft_eval.py --config_path $CONFIG
+# CUDA_VISIBLE_DEVICES=0 python sft_eval.py --config_path $CONFIG
 
 ## hosting in stremalit
 # CUDA_VISIBLE_DEVICES=0 streamlit run sft_gradio.py  --server.port 7861
