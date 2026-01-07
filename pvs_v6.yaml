@@ -1,0 +1,7 @@
+# split so that same files are not seen in train/tst
+# not have qed in sequents + add command hist
+# + fix prev hist get from branch or parent
+model_name: "codellama/CodeLlama-7b-hf"
+save_path: "/workspace1/macharya/pvs_sftfull_roll2fixed_histfixed"
+rollouts_path: "rollouts2fixed_cmdhist_plus_seq_histfixed.jsonl"
+csv_file: "recommended_commands.csv"

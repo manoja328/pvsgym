@@ -1,0 +1,5 @@
+# hist only
+model_name: "codellama/CodeLlama-7b-hf"
+save_path: "pvs_sft25"
+rollouts_path: "rollouts2_cmdhist_only.jsonl"
+csv_file: "recommended_commands.csv"
