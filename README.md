@@ -1,20 +1,13 @@
-# PVSgym
+# PVSgym - Read our paper: https://www.manojacharya.com/pvsgym/
 
 Install via pip: `pip install git+https://github.com/manoja328/pvsgym.git`
-
-Read our paper: https://www.manojacharya.com/pvsgym/
-
-## Build and Install PVS and check if it can run in raw mode:
-`./pvs -raw -port 8080`
-
-## Install the pvspy library:
-
+or clone the repo and
 ```
 cd pvspy
 pip install -e .
 ```
 
-## Typechecking on a file: 
+## Typechecking a file: 
 `python pvspy/pvs_typecheck.py 8780 exmples/min2f_imo_2006_p3.pvs`
 
 ## PVSgym on a specification file with a list of proofs: 
