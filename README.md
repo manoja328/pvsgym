@@ -3,7 +3,7 @@
 Install via pip: `pip install git+https://github.com/manoja328/pvsgym.git`
 or clone the repo and
 ```
-cd pvspy
+cd pvsgym
 pip install -e .
 ```
 
