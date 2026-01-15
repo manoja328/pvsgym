@@ -15,15 +15,13 @@ pip install -e .
 ```
 
 ## Typechecking on a file: 
-`python pvspy/pvspy/pvs_typecheck.py 8780 agent_expt/imo_1977_p6/trial_2.pvs`
+`python pvspy/pvs_typecheck.py 8780 exmples/min2f_imo_2006_p3.pvs`
 
 ## PVSgym on a specification file with a list of proofs: 
 
 `python pvs_chat_file.py`
 
-### Example run output:
 ```
-(base) ➜  pvs_scripts git:(main) ✗ python ./pvs_chat_file.py
 🔁 Starting proof: inequality_lemma (4 steps)
 🚀 Starting PVS server...
 ✅ PVS server started on port 8080 (PID 92351)
