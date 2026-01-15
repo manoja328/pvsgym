@@ -8,7 +8,7 @@ pip install -e .
 ```
 
 ## Typechecking a file: 
-`python pvspy/pvs_typecheck.py 8780 exmples/min2f_imo_2006_p3.pvs`
+`python -m pvspy.pvs_typecheck 8780 examples/min2f_imo_2006_p3.pvs`
 
 ## PVSgym on a specification file with a list of proofs: 
 
