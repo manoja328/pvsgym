@@ -1,4 +1,4 @@
-# PVSgym - Read our paper: https://www.manojacharya.com/pvsgym/
+# PVSgym
 
 Install via pip: `pip install git+https://github.com/manoja328/pvsgym.git`
 or clone the repo and
@@ -38,7 +38,9 @@ Real time = 1.404 secs.
 🛑 Killed process group for PID 92351
 ```
 
-## Cite our work: 
+## Cite our work:
+Read our paper: https://www.manojacharya.com/pvsgym/
+
 ```
 @inproceedings{acharya2025pvsgym,
   title={PVSGym: A Proof Learning Environment},
